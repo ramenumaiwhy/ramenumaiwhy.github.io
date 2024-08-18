@@ -1,9 +1,82 @@
-.title {
-    color: #02ccba;  
+body{
+    font-family: 'メイリオ','Meiryo','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.main {
+header{
+    background-color: #192d23;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header ul li{
+    display: inline;
+    margin-right: 10px;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.title {
+    color: #fff;  
+}
+.top-page{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
     background-image: url(https://github.com/ramenumaiwhy/ramenumaiwhy.github.io/blob/main/D4A2346C-DA48-4C5F-ACA9-0FBB4CA53174_1_201_a.jpeg?raw=true);
     background-size: cover;
-    background-position: center;
-    height: 100vh;
+    color: white;
+    opacity: 0.7;
+    text-align: left;
+    height: 600px;
 }
+main {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+/*以下コピペ*/
+.content {
+    flex: 3;
+    padding: 20px;
+}
+.content-image{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    background-size: cover;
+}
+/* フッターのスタイル */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* レスポンシブデザインのためのメディアクエリ */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    header ul li {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .content, .sidebar {
+        padding: 10px;
+    }
