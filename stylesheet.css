@@ -1,4 +1,9 @@
 .title {
-    color: #02ccba;
+    color: #02ccba;  
+}
+.main {
     background-image: url(D4A2346C-DA48-4C5F-ACA9-0FBB4CA53174_1_201_a.jpeg);
-  }
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
