@@ -69,6 +69,8 @@ footer {
 @media screen and (max-width: 768px) {
     main {
         flex-direction: column;
+        display: flex;
+        margin: 0 auto;
     }
     
     header ul li {
@@ -77,6 +79,6 @@ footer {
         margin: 5px 0;
     }
 
-    .content, .sidebar {
+    .content {
         padding: 10px;
     }
