@@ -129,6 +129,10 @@ footer {
         width: 100%; /* モバイルでのフル幅表示 */
         height: auto;
     }
+    .header-image{
+        width: 100px;
+        margin-top: 20px;
+    }
 
     .top-page {
         height: auto;
