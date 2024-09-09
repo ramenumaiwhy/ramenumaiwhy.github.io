@@ -1,19 +1,22 @@
 body{
     font-family: 'メイリオ','Meiryo','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 85px;
 }
 header{
+    position: fixed; /* ヘッダーを固定 */
+    top: 0; /* ページの一番上に配置 */
+    z-index: 1000; /* 他の要素よりも前面に表示 */
     background-color: #192d23;
     color: #fff;
-    padding: 10px;
+    padding: 1%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.header-image{
-    width: 5%;
-    margin-top: 20px;
+.header-image {
+    width: 10%;
+    margin-top: 1%;
 }
 
 .header-left {
@@ -53,29 +56,43 @@ header ul li a{
 .title {
     color: #fff;  
 }
-.top-page{
-    max-width: 100%;
-    width: auto;
-    padding-bottom: 56.25%;
-    padding:20px;
-    margin: 0 auto;
-    background-image: url(https://github.com/ramenumaiwhy/ramenumaiwhy.github.io/blob/main/D4A2346C-DA48-4C5F-ACA9-0FBB4CA53174_1_201_a.jpeg?raw=true);
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    opacity: 0.7;
-    text-align: left;
-    height: auto;
+.top-page {
     position: relative;
+    width: 100%;
+    /* height: 100vh; 画面全体を占める */
+    overflow: hidden; /* 画像がはみ出さないようにする */
 }
-.top-page h1{
-    font-size: clamp(1.5rem, 3vw, 3rem);
-    width:40%;
-    height: auto;
-    padding-left: 5%;
-    padding-top: 3%;
+
+.top-page-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* アスペクト比を保ちながら、画像全体をカバー */
+}
+
+.top-page h1 {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    transform: translate(0, -50%);
+    color: white;
+    text-shadow: 
+        -1px -1px 0px black, /* 左上 */
+        1px -1px 0px black,  /* 右上 */
+        -1px 1px 0px black,  /* 左下 */
+        1px 1px 0px black;   /* 右下 */
     font-size: 3vw;
+}
+.top-page h2 {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    color: white;
+    text-shadow: 
+        -1px -1px 0px black, /* 左上 */
+        1px -1px 0px black,  /* 右上 */
+        -1px 1px 0px black,  /* 左下 */
+        1px 1px 0px black;   /* 右下 */
+    font-size: 2vw;
 }
 main {
     padding: 20px;
